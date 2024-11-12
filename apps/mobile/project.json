@@ -1,0 +1,49 @@
+{
+  "name": "mobile",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mobile/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "cap": {
+      "cwd": "apps/mobile",
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd apps/mobile && npx cap",
+        "forwardAllArgs": true
+      }
+    },
+    "add": {
+      "cwd": "apps/mobile",
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd apps/mobile && npx cap add",
+        "forwardAllArgs": true
+      }
+    },
+    "build": {
+      "cwd": "apps/mobile",
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd apps/mobile && npx cap build",
+        "forwardAllArgs": true
+      }
+    },
+    "open": {
+      "cwd": "apps/mobile",
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd apps/mobile && npx cap open",
+        "forwardAllArgs": true
+      }
+    },
+    "sync": {
+      "cwd": "apps/mobile",
+      "executor": "nx:run-commands",
+      "options": {
+        "command": "cd apps/mobile && npx cap sync",
+        "forwardAllArgs": true
+      }
+    }
+  }
+}
